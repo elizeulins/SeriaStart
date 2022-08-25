@@ -1,0 +1,80 @@
+@import url(http://fonts.googlesapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root {  /*definindo as cores padrao pra todo o site a serem aplicadas*/
+  --primary-color: lightcoral;
+  --secundary-color: DimGrey;
+  --tertiary-color: Gainsboro;
+}
+
+body { /*Modificar todo o site*/
+  background-color: var(--primary-color);
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+
+#container { /*Modificar um grupo de elementos. (Container foi uma div pra add as outras div dentro)*/
+    height: 480px;
+    width: 320px;
+    margin: 70px auto;
+    background: #f7f7f7;
+    box-shadow:0 0 5px var(--tertiary-color);
+    border-radius: 20px;
+}
+
+.title { /*Modificar o titulo CALCULADORA DE GORJETA*/
+    background: var(--tertiary-color);
+    color: var(--secundary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 18px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.tipsForm {/*Dar o espaçamento dos TEXTOS dos elementos de entrada*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.formInput{ /*Modificar as entradas: cor,altura e espaços da borda dos elementos*/
+    background: white;
+    width: 40px;
+    padding: 5px 5px 8px 8px;
+}
+
+.formInput:focus {  /*Add uma borda de foco no elemento*/
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+
+.formSelect {  /*Modificando o select: altura,espaço,tamanho fonte, e borda arrendondada*/
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.formSubmit {  /*Modificar o botao CALCULAR*/
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin: 30px auto;
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+}
+
+.formSubmit:hover {
+    background-color: red;
+}
+
+#TotalGorjeta {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
