@@ -17,18 +17,18 @@
         </div>
         <div>
             <form class="tipsForm" id="tipsForm"> <!--Entrada de dados-->
-                <label for="Conta">
+                <label for="bill">
                     <p>Quanto ficou a conta?</p>
                 </label>
                 <p><!--Paragrafo-->
-                    R$ <input type="number" placeholder="100" name="Conta" id="Conta" class="formInput"> <!--Placeholder = mostrar valor dentro do bloco, id = linkar o nome com campo(nome) de inserir.-->
+                    R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required> <!--Placeholder = mostrar valor dentro do bloco, id = linkar o nome com campo(nome) de inserir.-->
                 </p>
 
-                <label for="Qualidade do Servico">
+                <label for="serviceQual">
                     <p>Como foi seu atendimento?</p>
                 </label>
                 <p>
-                    <select name="Qualidade do Servico" id="Qualidade do Serviço" class="formSelect" > <!--Selecionar valores pre definidos-->
+                    <select name="serviceQual" id="serviceQual" class="formSelect" required> <!--Selecionar valores pre definidos-->
                     <option disable selected value="0">Escolha uma opção</option> <!--Mostrar o campo e desativar a "escolha uma opção"-->
                     <option value="0.3">30% - Incrivel</option>
                     <option value="0.2">20% - Bom</option>
@@ -38,20 +38,20 @@
                     </select>
                 </p>
 
-                <label for="Pessoas">
+                <label for="people">
                     <p>Quantas pessoas vão dividir a conta?</p>
                 </label>
                 <p>
-                    <input type="number" placeholder="1" name="Pessoas" id="Pessoas" class="formInput"> Pessoa(s)
+                    <input type="number" placeholder="1" name="people" id="people" class="formInput" required> Pessoa(s)
                 </p>
 
                 <button type="submit" class="formSubmit">Calcular!</button> <!--add um botao-->
             </form>
         </div>
-        <div id="TotalGorjeta">
+        <div id="totalTip"> 
         Gorjeta total:
-        R$<span id="Gorjeta">0.00</span>
-        <p id="each">para cada</p>
+        R$<span id = "tip">0.00</span>
+        <p id="each">para cada!</p>
         </div>
     </div> 
     <script type="text/javascript" src="scripts.js"></script> <!--Importando o JS no HTML-->       
